@@ -28,43 +28,26 @@
         </ul>
     </nav>
 
-    <main class="cadastro-form">
-        <fieldset>
-            <h2>Cadastro de Funcionario</h2>
+    <div class="cadastro-form">
+        <div class="formulario">
+            <h2>Cadastro de Cliente</h2>
+              <form>
+                 <input type="text" name="nome" id="nome" placeholder="Nome">
+                 <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+                 <input type="text" name="cpf" id="cpf" placeholder="CPF">
+                 <input type="date" name="nascimento" id="nascimento">
+                 <input type="text" name="telefone" id="telefone" placeholder="Telefone">
+                 <input type="text" name="cargo/funcao" id="telefone" placeholder="Cargo/Função">
+                 <input type="text" name="salario" id="email" placeholder="Salário">
+                 <input type="email" name="email" id="email" placeholder="E-mail">
+                 <input type="password" name="senha" id="senha" placeholder="Senha">
 
-            <form action="">Nome do Funcionario:</form>
-            <input type="text" name="nome" id="nome" placeholder="Ex: Ednaldo">
-
-            <form action="">Sobrenome do Funcionario:</form>
-            <input type="text" name="sobrenome" id="sobrenome" placeholder="Ex: Pereira">
-
-            <form action="">CPF:</form>
-            <input type="text" name="cpf" id="cpf" placeholder="Ex: 100000000">
-
-            <form action="">Data de Nascimento:</form>
-            <input type="date" name="nascimento" id="nascimento">
-
-            <form action="">Telefone:</form>
-            <input type="text" name="telefone" id="telefone" placeholder="Ex: 4002-8922">
-
-            <form action="">Cargo / Função:</form>
-            <input type="text" name="telefone" id="telefone" placeholder="Ex: Repositor">
-
-            <form action="">Salário:</form>
-            <input type="email" name="email" id="email" placeholder="Ex: R$67.000">
-
-            <form action="">Email:</form>
-            <input type="email" name="email" id="email" placeholder="Ex: xhoppi@gmail.com">
-
-            <form action="">Senha:</form>
-            <input type="password" name="senha" id="senha" placeholder="Ex: **********">
-
-            <h3> Selecionar Foto de Perfil: </h3>
-            <input type="file" name="foto" id="foto">
-
-            <button type="submit">Cadastrar</button>
-        </fieldset>
-    </main>
+                 <h2>Selecionar foto de perfil:</h2>
+                 <input type="file" name="foto" id="foto">
+                 <button type="submit">Cadastrar</button>
+              </form>      
+        </div>
+    </div>
 
     <footer>
         <div class="footer-conteudo">
