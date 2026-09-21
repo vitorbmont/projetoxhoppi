@@ -109,6 +109,108 @@ main{
     background-color: #ffb347;
 }
 
+/* ========================================
+   CARROSSEL DE BANNERS
+   ======================================== */
+
+#meuCarrossel {
+    width: 80%;
+    max-width: 1000px;
+    height: 300px;
+    margin: 35px auto;
+    position: relative;
+}
+
+#meuCarrossel .carousel-inner {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+#meuCarrossel .carousel-item {
+    width: 100%;
+    height: 300px;
+}
+
+#meuCarrossel .carousel-item img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* ========================================
+   INDICADORES
+   ======================================== */
+
+#meuCarrossel .carousel-indicators {
+    margin-bottom: 10px;
+}
+
+#meuCarrossel .carousel-indicators button {
+    width: 8px;
+    height: 8px;
+    margin: 0 4px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.7;
+}
+
+#meuCarrossel .carousel-indicators .active {
+    opacity: 1;
+}
+
+/* ========================================
+   BOTÃO ANTERIOR
+   ======================================== */
+
+#meuCarrossel .carousel-control-prev {
+    width: 50px;
+}
+
+#meuCarrossel .carousel-control-prev-icon {
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+}
+
+/* ========================================
+   BOTÃO PRÓXIMO
+   ======================================== */
+
+#meuCarrossel .carousel-control-next {
+    width: 50px;
+}
+
+#meuCarrossel .carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+}
+
+/* ========================================
+   BANNER PROMOCIONAL
+   ======================================== */
+
+.banner-promocional {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.banner-promocional a {
+    display: block;
+    width: 100%;
+}
+
+.banner-promocional img {
+    display: block;
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+}
+
 .opcoes-login {
     display: flex;
     justify-content: space-between;
@@ -188,7 +290,7 @@ main{
     flex-direction: column;
     align-items: center;
     margin: 30px;
-    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .formulario h2{
@@ -229,36 +331,76 @@ main{
 }
 /* ============================ */
 /* Visualização dos Produtos */
+.produtos {
+    width: 80%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.produtos > h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0 20px;
+    color: #ee5720;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.produtos > h3::before,
+.produtos > h3::after {
+    content: "";
+    width: 100px;
+    height: 1px;
+    background-color: #ee5720;
+}
 
 .produtocamisa{
     width: 180px;
     background-color: white;
     border: 1px solid #ddd;
-    padding: 10px;
+    padding: 15px;
     box-sizing: border-box;
-    box-shadow: 5px 5px 10px rgb(185, 184, 184);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12);
+}
+
+.produtocamisa:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.20);
 }
 
 .produtocamisa img{
-    height: 100%;
+    height: 150px;
     width: 150px;
     object-fit: contain;
 }
 
-.produtocamisa h3{
+.produtocamisa h3 {
+    margin: 8px;
+    font-size: 0.75rem;
     font-weight: normal;
-    font-size: 14px;
-    margin: 8px 0;
+    color: #555;
+    line-height: 1.3;
+    height: 32px;
+    overflow: hidden;
 }
 
-.produtocamisa .preco{
-    color: rgb(65, 65, 65);
-    font-size: 14px;
+.produto-preco {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px 8px;
 }
 
-.produtocamisa .estoque{
-    color: var(--cor--texto);
-    font-size: 11px;
+.produto-preco span {
+    color: #ee5720;
+    font-size: 0.75rem;
+}
+
+.produto-preco small {
+    color: #aaa;
+    font-size: 0.65rem;
 }
 
 .lista-produtos {
@@ -266,12 +408,20 @@ main{
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
     width: 900px;
-    margin: auto;
 }
-
 /* ============================ */
 
-
+.lista-cupons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 900px;
+    margin: 10px;
+}
+.cupom img{
+    height: 150px;
+    width: 500px;
+}
 
 footer{
     background-color: var(--cor--fundo);
@@ -346,24 +496,23 @@ footer{
 }
 
 .pagamentos img {
-    width: 50px;
+    width: 60x;
     height: 25px;
 }
 
+.icones-sociais img{
+    height: 20px;
+    width: 20px;
+}
+
 .lojas-virtuais{
-    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
 
-.lojas-virtuais li{
-    
 }
 
 .lojas-virtuais img{
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
 }
