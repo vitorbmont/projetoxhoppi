@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="../assets/style.css">
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="../assets/script.js"></script>
     <title>Xhopee</title>
 </head>
 
@@ -49,21 +49,93 @@
             <h2 id="precoProduto">R$56,90</h2>
             <p id="qtdDisponivel">171 peças dísponíveis</p>
             <p>Modelos:</p>
-            <button class="botao" id="btnModeloPreto">Preto</button>
-            <button class="botao" id="btnModeloAzul">Azul</button>
-            <button class="botao" id="btnModeloVerde">Verde</button>
-            <button class="botao" id="btnModeloCinza">Cinza</button>
-            <button class="botao" id="btnModeloRosa">Rosa</button>
+            <button class="botao" id="btnModeloPreto" onclick="mudarPreco(this)">Preto</button>
+            <button class="botao" id="btnModeloAzul" onclick="mudarPreco(this)">Azul</button>
+            <button class="botao" id="btnModeloVerde" onclick="mudarPreco(this)">Verde</button>
+            <button class="botao" id="btnModeloCinza" onclick="mudarPreco(this)">Cinza</button>
+            <button class="botao" id="btnModeloRosa" onclick="mudarPreco(this)">Rosa</button>
 
             <p>Tamanhos:</p>
-            <button class="botao" id="btnTamanhoP">P</button>
-            <button class="botao" id="btnTamanhoM">M</button>
-            <button class="botao" id="btnTamanhoG">G</button>
-            <button class="botao" id="btnTamanhoGG">GG</button>
+            <button class="botao" id="btnTamanhoP" onclick="mudarDisponivel(this)">P</button>
+            <button class="botao" id="btnTamanhoM" onclick="mudarDisponivel(this)">M</button>
+            <button class="botao" id="btnTamanhoG" onclick="mudarDisponivel(this)">G</button>
+            <button class="botao" id="btnTamanhoGG" onclick="mudarDisponivel(this)">GG</button>
             <p id="tamanhoSelecionado">Tamanho Selecionado: P</p>
             <button id="botaoComprar">Comprar Agora</button>
         </div>
     </div>
+
+    <footer>
+        <div class="footer-conteudo">
+            <!-- Atendimento ao Cliente-->
+            <section>
+                <h3>Atendimento ao Cliente</h3>
+                <ul>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">Como Comprar</a></li>
+                    <li><a href="#">Métodos de Pagamento</a></li>
+                    <li><a href="#">Garantia Xhopii</a></li>
+                    <li><a href="#">Devolução e Reembolso</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Ouvidoria</a></li>
+                </ul>
+            </section>
+
+            <!-- Sobre a Xhoppi-->
+            <section>
+                <h3>Sobre a Xhoppi</h3>
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Políticas Xhopii</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Programa de Afiliados da Xhopii</a></li>
+                    <li><a href="#">Seja um Entregador Xhopii</a></li>
+                    <li><a href="#">Ofertas Relâmpagoo</a></li>
+                    <li><a href="#">Xhopii Blog</a></li>
+                    <li><a href="#">Imprensa</a></li>
+                </ul>
+            </section>
+
+            <!-- Pagamentos-->
+            <section class="pagamentos">
+                <h3>Pagamento</h3>
+                <ul>
+                    <li><a href="#"><img src="../assets/logos/pixlogo.png" alt="pix"></a></li>
+                    <li><a href="#"><img src="../assets/logos/boletologo.png" alt="boleto"></a></li>
+                    <li><a href="#"><img src="../assets/logos/americanexpress.png" alt="American Express"></a></li>
+                    <li><a href="#"><img src="../assets/logos/visalogo.png" alt="Visa"></a></li>
+                    <li><a href="#"><img src="../assets/logos/masterlogo.png" alt="MasterCard"></a></li>
+                    <li><a href="#"><img src="../assets/logos/hipercard.png" alt="Hipercard"></a></li>
+                    <li><a href="#"><img src="../assets/logos/elo.png" alt="Elo"></a></li>
+                </ul>
+            </section>
+
+            <!-- Siga-nos-->
+            <section>
+                <h3>Siga-nos</h3>
+                <ul class="icones-sociais">
+                    <li><a href="#"><img src="../assets/mini-logos/instagram.png" alt="Instagram"> Instagram</a></li>
+                    <li><a href="#"><img src="../assets/mini-logos/twitter.png" alt="Twitter"> Twitter</a></li>
+                    <li><a href="#"><img src="../assets/mini-logos/face.png" alt="Facebook"> Facebook</a></li>
+                    <li><a href="#"><img src="../assets/mini-logos/youtube.png" alt="Youtube"> Youtube</a></li>
+                    <li><a href="#"><img src="../assets/mini-logos/linkedin.png" alt="Linkedin"> Linkedin</a></li>
+                </ul>
+            </section>
+
+            <section class="app">
+                <h3>Baixe o App</h3>
+                <img src="../assets/logos/qrcode.png" alt="QRcode" id="qrcode">
+                <ul class="lojas-virtuais">
+                    <li><a href="#"><img src="../assets/logos/googleplay.png" alt="gplay">GooglePlay</a></li>
+                    <li><a href="#"><img src="../assets/logos/apple.png" alt="apstore">AppleStore</a></li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="footer-copyright">
+            <p>© 2023 Xhopii. Todos os direitos acadêmicos reservados</p>
+        </div>
+    </footer>
 </body>
 
 </html>
