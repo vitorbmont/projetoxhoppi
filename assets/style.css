@@ -1,6 +1,9 @@
-:root{
+/* ========================================
+   VARIÁVEIS GLOBAIS (cores e tamanhos)
+   ======================================== */
+:root {
     --cor--principal: #ee5720;
-    --cor--secundaria: #ff8c42; 
+    --cor--secundaria: #ff8c42;
     --cor--fundo: #f0efef;
 
     --cor--header: var(--cor--principal);
@@ -10,17 +13,21 @@
     --tam--texto1: 1.5rem;
     --tam--texto2: 2rem;
 }
- html{
-    height: 100%;
- }
 
-*{
+/* ========================================
+   RESET / BASE
+   ======================================== */
+html {
+    height: 100%;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial, 'Segoe UI', sans-serif;
     background-color: white;
     min-height: 100vh;
@@ -28,12 +35,15 @@ body{
     flex-direction: column;
 }
 
-main{
+main {
     flex: 1;
 }
 
 
-.topo{
+/* ========================================
+   TOPO / HEADER
+   ======================================== */
+.topo {
     background-color: var(--cor--principal);
     display: flex;
     align-items: center;
@@ -42,7 +52,7 @@ main{
     padding: 12px 20px;
 }
 
-.topo-log{
+.topo-log {
     background-color: var(--cor--fundo);
     display: flex;
     align-items: center;
@@ -51,7 +61,7 @@ main{
     padding: 12px 20px;
 }
 
-.menu-logo{
+.menu-logo {
     display: flex;
     align-items: center;
     font-size: 1.4rem;
@@ -59,34 +69,38 @@ main{
     gap: 10px;
 }
 
-.menu-logo img{
+.menu-logo img {
     height: 50px;
-    width: 50px;  
+    width: 50px;
 }
 
-.topo .sair{
+.topo .sair {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
 }
 
-.topo-log .ajuda{
+.topo-log .ajuda {
     color: var(--cor--texto);
     text-decoration: none;
     font-size: 1.2rem;
 }
+
 /* HOVER*/
 .topo .sair:hover,
-.topo-log .ajuda:hover{
+.topo-log .ajuda:hover {
     text-decoration: underline;
 }
 
-.menu-opcoes{
+/* ========================================
+   MENU DE NAVEGAÇÃO
+   ======================================== */
+.menu-opcoes {
     background-color: var(--cor--nav);
     width: 100%;
 }
 
-.menu-opcoes ul{
+.menu-opcoes ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -96,11 +110,11 @@ main{
     padding: 0;
 }
 
-.menu-opcoes li{
+.menu-opcoes li {
     text-align: center;
 }
 
-.menu-opcoes a{
+.menu-opcoes a {
     display: block;
     padding: 10px 8px;
     text-decoration: none;
@@ -108,14 +122,12 @@ main{
     font-size: 1.0rem;
 }
 
-.menu-opcoes a:hover{
+.menu-opcoes a:hover {
     background-color: #ffb347;
 }
 
 /* ========================================
-   CARROSSEL 
-   ======================================== */
-
+   CARROSSEL  */
 #meuCarrossel {
     width: 80%;
     max-width: 1000px;
@@ -143,9 +155,7 @@ main{
 }
 
 /* ========================================
-   INDICADORES
-   ======================================== */
-
+   INDICADORES */
 #meuCarrossel .carousel-indicators {
     margin-bottom: 10px;
 }
@@ -165,9 +175,7 @@ main{
 }
 
 /* ========================================
-   BOTÃO ANTERIOR
-   ======================================== */
-
+   BOTÃO ANTERIOR */
 #meuCarrossel .carousel-control-prev {
     width: 50px;
 }
@@ -179,9 +187,7 @@ main{
 }
 
 /* ========================================
-   BOTÃO PRÓXIMO
-   ======================================== */
-
+   BOTÃO PRÓXIMO */
 #meuCarrossel .carousel-control-next {
     width: 50px;
 }
@@ -192,10 +198,8 @@ main{
     background-size: 100% 100%;
 }
 
-/* ========================================
-   BANNER PROMOCIONAL
-   ======================================== */
-
+/* ======================================== *
+   BANNER PROMOCIONAL */
 .banner-promocional {
     width: 80%;
     max-width: 1000px;
@@ -214,9 +218,12 @@ main{
     object-fit: cover;
 }
 
+/* ========================================
+   LOGIN / CADASTRO - links e opções
+   ======================================== */
 .opcoes-login {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-;
     list-style: none;
     padding: 0;
     margin: 15px 0;
@@ -228,12 +235,12 @@ main{
     font-size: 14px;
 }
 
-.login-social{
+.login-social {
     display: flex;
     gap: 20px;
 }
 
-.login-social button{
+.login-social button {
     flex: 1;
     height: 45px;
     background-color: white;
@@ -246,9 +253,9 @@ main{
     cursor: pointer;
 }
 
-.login-social img{
+.login-social img {
     width: 20px;
-    height: 20px;    
+    height: 20px;
 }
 
 .novo-usuario {
@@ -262,7 +269,10 @@ main{
     text-decoration: none;
 }
 
-.cadastro-form{
+/* ========================================
+   CONTAINERS DAS TELAS (cadastro / login / redefinir senha)
+   ======================================== */
+.cadastro-form {
     background-color: rgb(218, 217, 217);
     min-height: 75vh;
     display: flex;
@@ -270,7 +280,7 @@ main{
     justify-content: center;
 }
 
-.login-form{
+.login-form {
     background-color: var(--cor--principal);
     min-height: 75vh;
     display: flex;
@@ -278,13 +288,17 @@ main{
     justify-content: center;
 }
 
-.redef-senha-form{
+.redef-senha-form {
     min-height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* ========================================
+   CARD DO FORMULÁRIO (.formulario)
+   usado em cadastro / login / redefinir senha
+   ======================================== */
 .formulario {
     background-color: white;
     width: 400px;
@@ -296,13 +310,13 @@ main{
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.formulario h2{
+.formulario h2 {
     color: var(--cor--texto);
     font-size: 1.5rem;
     font-weight: normal;
 }
 
-.formulario form{
+.formulario form {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -310,34 +324,60 @@ main{
     gap: 10px;
 }
 
-.formulario input{
+.formulario input {
     height: 45px;
     width: 300px;
     padding: 5px 10px;
     font-size: 1rem;
 }
 
-.btn-entrar, 
+/* ----- Botões de submit (Entrar / Cadastrar) ----- */
+.btn-entrar,
 .btn-cadastrar {
     width: 100%;
     height: 45px;
-    margin-top: 10px;
+    padding: 10px 24px;
     border: none;
     background-color: #ff572f;
     color: white;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
-.btn-entrar:hover, 
+.btn-entrar:hover,
 .btn-cadastrar:hover {
     background-color: #c94120;
-    
 }
 
-/* ============================ */
-/* Visualização dos Produtos */
+/* ----- ATENÇÃO: segunda declaração de .formulario -----
+   Esta regra vem depois da de cima e sobrescreve o padding
+   (fica 40px 30px 30px em vez de 20px 35px) e adiciona
+   position: relative, usado como referência para a .voltar-seta */
+.formulario {
+  position: relative;
+  padding: 40px 30px 30px;
+}
+
+/* ----- Seta de voltar (tela de redefinir senha) ----- */
+.voltar-seta {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.voltar-seta i {
+  font-size: 24px;
+}
+
+/* ============================ 
+Visualização dos Produtos */
 .produtos {
     width: 80%;
     max-width: 1000px;
@@ -346,10 +386,11 @@ main{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
 }
 
-.produtos > h3,
-.produtos > h2 {
+.produtos>h3,
+.produtos>h2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -361,15 +402,16 @@ main{
     text-transform: uppercase;
 }
 
-.produtos > h3::before,
-.produtos > h3::after {
+.produtos>h3::before,
+.produtos>h3::after {
     content: "";
     width: 250px;
     height: 1px;
     background-color: #ee5720;
 }
 
-.produtocamisa{
+/* ----- Card individual de produto (camisa) ----- */
+.produtocamisa {
     width: 180px;
     background-color: white;
     border: 1px solid #ddd;
@@ -383,7 +425,7 @@ main{
     border: 1px solid #fa6400;
 }
 
-.produtocamisa img{
+.produtocamisa img {
     height: 150px;
     width: 150px;
     object-fit: contain;
@@ -415,6 +457,7 @@ main{
     font-size: 0.65rem;
 }
 
+/* ----- Grid da lista de produtos ----- */
 .lista-produtos {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -424,8 +467,15 @@ main{
     margin: 0 auto;
     justify-content: center;
 }
-/* ============================ */
-.cupons{
+
+.lista-produtos a{
+    text-decoration: none;
+}
+
+/* ========================================
+   CUPONS
+   ======================================== */
+.cupons {
     width: 80%;
     display: flex;
     justify-content: center;
@@ -442,14 +492,16 @@ main{
     margin: 0 auto;
     justify-items: center;
 }
-.cupom img{
+
+.cupom img {
     height: 150px;
     width: 500px;
 }
-/* ============================ */
-/* === Interface de Produto === */
 
-.produto-container{
+/* ========================================
+   PÁGINA DE PRODUTO (interface individual)
+   ======================================== */
+.produto-container {
     display: flex;
     gap: 40px;
     width: 90%;
@@ -459,20 +511,21 @@ main{
     flex-wrap: wrap;
 }
 
-.produto-imagem{
+.produto-imagem {
     display: flex;
     gap: 15px;
     flex: 1 1 55%;
     min-width: 320px;
 }
 
-.produto-miniatura{
+/* ----- Miniaturas (thumbnails) ----- */
+.produto-miniatura {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.produto-miniatura img{
+.produto-miniatura img {
     width: 70px;
     height: 70px;
     object-fit: cover;
@@ -482,12 +535,13 @@ main{
     border-radius: 4px;
 }
 
-.produto-miniatura img:hover{
+.produto-miniatura img:hover {
     opacity: 1;
-    border: 2px solid rgb(251,86,48);
+    border: 2px solid rgb(251, 86, 48);
 }
 
-.produto-principal{
+/* ----- Imagem principal ----- */
+.produto-principal {
     flex: 1;
     display: flex;
     align-items: center;
@@ -496,66 +550,69 @@ main{
     border: 1px solid #eee;
 }
 
-.produto-principal img{
+.produto-principal img {
     width: 100%;
     max-height: 600px;
     object-fit: contain;
 }
 
-.produto-detalhes{
+/* ----- Detalhes / botões / preço ----- */
+.produto-detalhes {
     flex: 1 1 35%;
     min-width: 280px;
 }
 
-.produto-detalhes h1{
+.produto-detalhes h1 {
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-.produto-detalhes p{
+.produto-detalhes p {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.produto-detalhes .botao{
+.produto-detalhes .botao {
     height: 40px;
     cursor: pointer;
-    background-color: rgba(255,255,255);
-    color: rgba(0,0,0,.8);
-    border: 1px solid rgba(0,0,0,.09);
+    background-color: rgba(255, 255, 255);
+    color: rgba(0, 0, 0, .8);
+    border: 1px solid rgba(0, 0, 0, .09);
     margin: 4px 8px 8px 0;
     padding: 0.25rem 0.75rem;
 }
 
-.produto-detalhes .botao:hover{
-    color: rgb(251,86,48);
-    border: 1px solid rgb(251,86,48);
+.produto-detalhes .botao:hover {
+    color: rgb(251, 86, 48);
+    border: 1px solid rgb(251, 86, 48);
 }
 
-.produto-detalhes #botaoComprar{
+.produto-detalhes #botaoComprar {
     width: 100%;
     height: 50px;
     cursor: pointer;
-    background-color: rgb(251,86,48);
-    color: rgb(255,255,255);
-    border: 1px solid rgb(251,86,48);
+    background-color: rgb(251, 86, 48);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(251, 86, 48);
     margin-top: 15px;
     font-weight: bold;
 }
 
-.produto-detalhes #botaoComprar:hover{
+.produto-detalhes #botaoComprar:hover {
     background-color: #d13a18;
 }
 
-.produto-detalhes #precoProduto{
+.produto-detalhes #precoProduto {
     margin-top: 5px;
     margin-bottom: 10px;
     font-size: 1.875rem;
-    color: rgb(251,86,48);
+    color: rgb(251, 86, 48);
 }
-/* ============================ */
 
-footer{
+/* ========================================
+   FOOTER
+   ======================================== */
+footer {
     background-color: var(--cor--fundo);
     color: rgb(0, 0, 0);
     text-align: center;
@@ -563,7 +620,7 @@ footer{
     width: 100%;
 }
 
-.footer-conteudo{
+.footer-conteudo {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 30px;
@@ -571,7 +628,7 @@ footer{
     font-size: 0.9rem;
 }
 
-.footer-conteudo section{
+.footer-conteudo section {
     display: flex;
     flex-direction: column;
 }
@@ -583,27 +640,28 @@ footer{
     margin-bottom: 20px;
 }
 
-.footer-conteudo ul{
+.footer-conteudo ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.footer-conteudo li{
+.footer-conteudo li {
     margin-bottom: 10px;
 }
 
-.footer-conteudo a{
+.footer-conteudo a {
     text-decoration: none;
     margin-bottom: 10px;
     color: rgb(0, 0, 0);
 }
 
-.footer-conteudo a:hover{
+.footer-conteudo a:hover {
     color: rgb(51, 26, 26);
 }
 
-.app img{
+/* ----- App / lojas virtuais ----- */
+.app img {
     width: auto;
     height: 100px;
     align-self: center;
@@ -616,14 +674,15 @@ footer{
     padding: 20px;
 }
 
-.pagamentos ul{
+/* ----- Ícones de pagamento e redes sociais ----- */
+.pagamentos ul {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
 }
 
-.pagamentos li{
+.pagamentos li {
     margin-bottom: 0;
 }
 
@@ -632,7 +691,7 @@ footer{
     height: 25px;
 }
 
-.icones-sociais img{
+.icones-sociais img {
     height: 20px;
     width: 20px;
 }
@@ -643,7 +702,7 @@ footer{
     align-items: center;
 }
 
-.lojas-virtuais img{
+.lojas-virtuais img {
     height: 20px;
     width: 20px;
 }
